@@ -1,0 +1,266 @@
+\newcommand*{\Zjets}{\ensuremath{Z+}jets\xspace}
+\newcommand*{\Wjets}{\ensuremath{Z+}jets\xspace}
+\newcommand*{\ttV}{\ensuremath{\ttbar V}\xspace}
+\newcommand*{\ttW}{\ensuremath{\ttbar W}\xspace}
+\newcommand*{\ttZ}{\ensuremath{\ttbar Z}\xspace}
+\newcommand*{\WtZ}{\ensuremath{tWZ}\xspace}
+\newcommand*{\tWZ}{\WtZ}
+\newcommand*{\tZ}{\ensuremath{tZ}\xspace}
+\newcommand*{\Zt}{\tZ}
+\newcommand*{\Wt}{\ensuremath{Wt}\xspace}
+\newcommand*{\tW}{\Wt}
+\newcommand*{\sttW}{\ensuremath{\sigma_{\ttW}}\xspace}
+\newcommand*{\sttZ}{\ensuremath{\sigma_{\ttZ}}\xspace}
+
+\newcommand*{\lumi}{\ensuremath{3.2\,\ifb}\xspace}
+
+\newcommand*{\xtt}{\ensuremath{\sigma_{\ttbar}}\xspace}
+\newcommand*{\mtop}{\ensuremath{m_{\text{top}}}\xspace}
+\newcommand*{\pdf}[1]{\texttt{#1}}
+\newcommand*{\tune}[1]{\texttt{#1}}
+\newcommand*{\tool}[1]{\textsc{#1}}
+\newcommand*{\Zgamstar}{\ensuremath{Z/\gamma^{*}}\xspace}
+ 
+%Dataset groups
+%Real 4 L
+\newcommand{\bgZZ}{\ensuremath{ZZ}}
+\newcommand{\bgttH}{\ensuremath{\ttbar H}}
+\newcommand{\bgHZZ}{\ensuremath{H \rightarrow ZZ}}
+\newcommand{\bgtttt}{\ensuremath{\ttbar\ttbar}}
+\newcommand{\bgttWW}{\ensuremath{\ttbar WW}}
+\newcommand{\bgVVV}{tribosons}
+\newcommand{\bgWtZ}{\ensuremath{WtZ}}
+
+%Fakes
+\newcommand{\bgWJets}{\ensuremath{W+\mathrm{jets}}}
+\newcommand{\bgWGamma}{\ensuremath{W+\gamma}}
+\newcommand{\bgZJets}{\ensuremath{Z+\mathrm{jets}}}
+\newcommand{\bgZGamma}{\ensuremath{Z+\gamma}}
+\newcommand{\bgWW}{\ensuremath{WW}}
+\newcommand{\bgWZ}{\ensuremath{WZ}}
+\newcommand{\bgttW}{\ensuremath{\ttbar W}}
+\newcommand{\bgttV}{\ensuremath{\ttbar V}}
+\newcommand{\bgttVV}{\ensuremath{\ttbar VV}}
+
+%Variables
+\newcommand{\FirstZ}{\ensuremath{Z_1}}
+\newcommand{\SecondZ}{\ensuremath{Z_2}}
+\newcommand{\FirstZM}{\ensuremath{m_{Z_1}}}
+\newcommand{\SecondZM}{\ensuremath{m_{Z_2}}}
+\newcommand{\DeltaR}{\ensuremath{\Delta R}}
+\newcommand{\MinLepDR}{\ensuremath{\min(\Delta R_{\ell \ell})}}
+\newcommand{\MinMll}{\ensuremath{\min(m_{\ell^+\ell^-})}}
+
+\newcommand{\LepPtS}{\ensuremath{p_{\text{T34}}}}
+\newcommand{\ptcone}{\ensuremath{\pt^{\text{cone30}}}}
+\newcommand{\etcone}{\ensuremath{\et^{\text{cone20}}}}
+\newcommand{\etconelep}{\ensuremath{\et^{\text{cone20},\ell}}}
+\newcommand{\relptcone}{\ensuremath{\pt^{\text{cone30}} / \pt^{\ell}}}
+\newcommand{\reletcone}{\ensuremath{\et^{\text{cone20}} / \pt^{\ell}}}
+\newcommand{\maxLepRelEtCone}{\ensuremath{\max(\reletcone, 4\ell)}}
+\newcommand{\JetsHT}{\ensuremath{H_\text{T}^{\text{jets}}}}
+\def\mt{\ensuremath{m_{\mathrm{T}}}} % Subscript roman not italic (EE)
+
+\newcommand{\ZWindow}[1]{\ensuremath{\lvert #1 - m_Z \rvert}}
+
+%Internal reference
+\newcommand{\refPlot}[1]{Fig.~\ref{#1}}
+\newcommand{\refFig}[1]{\refPlot{#1}}
+\newcommand{\refTable}[1]{Table~\ref{#1}}
+\newcommand{\refEq}[1]{Eq.~\ref{#1}}
+\newcommand{\refSection}[1]{Section~\ref{#1}}
+\newcommand{\refAppendix}[1]{Appendix~\ref{#1}}
+
+\newcommand{\MC}{Monte Carlo}
+\newcommand{\ie}{\textit{i.e.}}
+
+\newcommand{\nobDF}{0b -- DF}
+\newcommand{\onebDF}{1b -- DF}
+\newcommand{\twobDF}{2b -- DF}
+\newcommand{\nobSF}{0b -- SF}
+\newcommand{\onebSF}{1b -- SF}
+\newcommand{\twobSF}{2b -- SF}
+
+\newcommand{\ptmiss}{\ensuremath{\mathbf{p}_\mathrm{T}^\mathrm{miss}}\xspace}
+\def\etmiss{\ensuremath{E_{\mathrm{T}}^{\mathrm{miss}}}\xspace}
+\def\dR{\ensuremath{\Delta\mathrm{R}}\xspace}
+\def\deta{\ensuremath{\Delta\eta}\xspace}
+\def\dphi{\ensuremath{\Delta\phi}\xspace}
+
+%\newcommand*{\OSLSRA}{\mbox{2$\ell$-noZ-4j}}
+%\newcommand*{\OSLSRB}{\mbox{2$\ell$-noZ-5j}}
+%\newcommand*{\OSLSRC}{\mbox{2$\ell$-Z-5j}}
+%\newcommand*{\SSLSRA}{\mbox{$2e$-SS}}
+%\newcommand*{\SSLSRB}{\mbox{$e\mu$-SS}}
+%\newcommand*{\SSLSRC}{\mbox{$2\mu$-SS}}
+\newcommand*{\SSLSR}{\mbox{$2\mu$-SS}}
+
+\newcommand*{\TLSRA}{\mbox{3$\ell$-Z-1b4j}}
+\newcommand*{\TLSRB}{\mbox{3$\ell$-Z-2b3j}}
+\newcommand*{\TLSRC}{\mbox{3$\ell$-Z-2b4j}}
+\newcommand*{\TLSRD}{\mbox{3$\ell$-noZ-2b}}
+%\newcommand*{\FLSRA}{\mbox{4$\ell$-DF-0b}}
+\newcommand*{\FLSRB}{\mbox{4$\ell$-DF-1b}}
+\newcommand*{\FLSRC}{\mbox{4$\ell$-DF-2b}}
+\newcommand*{\FLSRD}{\mbox{4$\ell$-SF-1b}}
+\newcommand*{\FLSRE}{\mbox{4$\ell$-SF-2b}}
+
+%\newcommand*{\OSLCRA}{\mbox{2$\ell$-noZ-3j}}
+%\newcommand*{\OSLCRB}{\mbox{2$\ell$-Z-3j}}
+%\newcommand*{\OSLCRC}{\mbox{2$\ell$-Z-4j}}
+%\newcommand*{\TLCR}{\mbox{3$\ell$-Z-0b3j-CR}}
+\newcommand*{\TLCR}{\mbox{3$\ell$-WZ-CR}}
+\newcommand*{\FLCR}{\mbox{4$\ell$-ZZ-CR}}
+
+\newcommand*{\TLWZVR}{ \mbox{3$\ell$-Z-1b-VR}}
+\newcommand*{\TLfakesVR}{ \mbox{3$\ell$-noZ-1b-VR}}
+
+\newcommand*{\TLPRESEL}{\mbox{3$\ell$-Z-1j}}
+\newcommand*{\TLPRESELb}{\mbox{3$\ell$-Z-1b}}
+
+\newcommand*{\njets}{\ensuremath{n_{\rm jets}}}
+
+\newcommand*{\pttf}{\ensuremath{p_{\text{T34}}}\xspace}
+
+%\newcommand{\TabLeftBracket}{\begin{tabular}{@{}r@{}}\ldelim\{{2}{2ex} \\
+%\\ \end{tabular}}
+%\newcommand{\TabRightBracket}{\begin{tabular}{@{}l@{}}\rdelim\}{2}{2ex} \\
+%\\ \end{tabular}}
+
+\newcommand*{\ttH}{\ensuremath{\ttbar H}\xspace}
+\newcommand*{\OS}{opposite-sign}
+\newcommand*{\SSL}{same-sign dilepton}
+\newcommand*{\OSL}{\OS\ dilepton}
+\newcommand*{\TL}{trilepton}
+\newcommand*{\FL}{tetralepton}
+\newcommand*{\SSLC}{\SSL\ channel}
+\newcommand*{\OSLC}{\OSL\ channel}
+\newcommand*{\TLC}{\TL\ channel}
+\newcommand*{\FLC}{\FL\ channel}
+
+%\newcommand*{\vxsttw}{369}
+%\newcommand*{\vxsttwp}{+100}
+%\newcommand*{\vxsttwm}{-91}
+%\newcommand*{\vxsttwstp}{+86}
+%\newcommand*{\vxsttwstm}{-79}
+%\newcommand*{\vxsttwsy}{44}
+%\newcommand*{\vxsttz}{176}
+%\newcommand*{\vxsttzp}{+58}
+%\newcommand*{\vxsttzm}{-52}
+%\newcommand*{\vxsttzstp}{+52}
+%\newcommand*{\vxsttzstm}{-48}
+%\newcommand*{\vxsttzsy}{24}
+
+%ttW = 0.5662 +- 11%
+%SigXsecOverSM     = 2.17196      +/-  1.23976 (57%)
+% thus ttW = 1.23 and delta mu = 0.70
+%
+%ttZ = 0.7598
+%1.29769      +/-  0.498824 (38%)
+% thus 1.00 +- 0.40 pb
+
+%% New 1-Mar-2016
+% ttZ = 1.21 +- 0.40 (33%)
+% ttW = 2.43 +- 1.31 (54%)
+
+% ttZ = 0.92 +- 0.30 pb (33%)
+% ttW = 1.38 +- 0.74 pb (54%)
+
+%% New 10-Mar-2016
+% ttW = 2.43336 +- 1.37742
+% WZ = 1.15 +- 0.30
+% ZZ = 0.97 +- 0.18
+%
+% ttZ = 1.2149 +- 0.415157 
+% WZ = 1.13 +- 0.30
+% ZZ = 0.97 +- 0.17
+
+%\newcommand*{\vxsttw}{1.5}
+%\newcommand*{\vxsttwr}{1.4}
+%\newcommand*{\vxsttwst}{0.70}
+%\newcommand*{\vxsttwsy}{0.33}
+%\newcommand*{\vxsttwtot}{0.8}
+
+%\newcommand*{\vxsttwp}{+xx}
+%\newcommand*{\vxsttwm}{-xx}
+%\newcommand*{\vxsttwstp}{+xx}
+%\newcommand*{\vxsttwstm}{-xx}
+
+%\newcommand*{\vxsttz}{0.92}
+%\newcommand*{\vxsttzr}{1.0}
+%\newcommand*{\vxsttzst}{0.30}
+%\newcommand*{\vxsttzsy}{0.11}
+%%\newcommand*{\vxsttztot}{0.32}
+%\newcommand*{\vxsttztot}{0.3}
+
+%\newcommand*{\vxsttzp}{+yy}
+%\newcommand*{\vxsttzm}{-yy}
+%\newcommand*{\vxsttzstp}{+yy}
+%\newcommand*{\vxsttzstm}{-yy}
+
+
+%%PAPER (June 2016)
+\newcommand*{\vxsttw}{1.47}
+\newcommand*{\vxsttwr}{1.5}
+\newcommand*{\vxsttwst}{0.72}
+\newcommand*{\vxsttwsy}{0.33}
+\newcommand*{\vxsttwtot}{0.8}
+
+\newcommand*{\vxsttz}{0.97}
+\newcommand*{\vxsttzr}{1.0}
+\newcommand*{\vxsttzst}{0.29}
+\newcommand*{\vxsttzsy}{0.10}
+%\newcommand*{\vxsttztot}{0.31}
+\newcommand*{\vxsttztot}{0.3}
+
+
+\newcommand{\SupSub}[3]{\ensuremath{#1^{#2}_{#3}}}
+\newcommand{\FakeFactor}[2]{\SupSub{\mu}{#1}{\mathrm{#2}}}
+\newcommand{\FakeFactorXLight}{\FakeFactor{X}{Z-like}}
+\newcommand{\FakeFactorXHeavy}{\FakeFactor{X}{top-like}}
+\newcommand{\FakeFactorElLight}{\FakeFactor{e}{Z-like}}
+\newcommand{\FakeFactorElHeavy}{\FakeFactor{e}{top-like}}
+\newcommand{\FakeFactorMuLight}{\FakeFactor{\mu}{Z-like}}
+\newcommand{\FakeFactorMuHeavy}{\FakeFactor{\mu}{top-like}}
+
+\newcommand{\NEventsCR}[2]{\SupSub{N}{#1\mathrm{, CR}}{#2}}
+\newcommand{\NDataCRX}{\NEventsCR{X}{\mathrm{data}}}
+\newcommand{\NttbarCRX}{\NEventsCR{X}{\ttbar}}
+\newcommand{\NZJetsCRX}{\NEventsCR{X}{\bgZJets}}
+\newcommand{\NOtherCRX}{\NEventsCR{X}{\mathrm{others}}}
+
+\newcommand{\NEventsCRA}[2]{\SupSub{N}{#1\mathrm{,} A}{#2}}
+\newcommand{\NDataCRAX}{\NEventsCRA{X}{\mathrm{data}}}
+\newcommand{\NttbarCRAX}{\NEventsCRA{X}{\ttbar}}
+\newcommand{\NZJetsCRAX}{\NEventsCRA{X}{\bgZJets}}
+\newcommand{\NOtherCRAX}{\NEventsCRA{X}{\mathrm{others}}}
+
+\newcommand{\NEventsCRB}[2]{\SupSub{N}{#1\mathrm{,} B}{#2}}
+\newcommand{\NDataCRBX}{\NEventsCRB{X}{\mathrm{data}}}
+\newcommand{\NttbarCRBX}{\NEventsCRB{X}{\ttbar}}
+\newcommand{\NZJetsCRBX}{\NEventsCRB{X}{\bgZJets}}
+\newcommand{\NOtherCRBX}{\NEventsCRB{X}{\mathrm{others}}}
+
+
+\newcommand{\kInsertMiniPage}[1]
+{
+  \begin{minipage}{.49\textwidth}
+    \centering
+    \includegraphics[width=1.0\textwidth]{#1}
+  \end{minipage}
+}
+
+\newcommand*{\lowL}{\ensuremath{\SI{E33}{\per\cm\squared\per\second}}\xspace}
+\newcommand*{\oflo}{The last bin in each of the distributions includes the overflow}
+\newcommand*{\oflor}{The last bin of the distribution shown in the right panel includes the overflow}
+\newcommand*{\oflol}{The last bin of the distribution shown in the left panel includes the overflow}
+\newcommand*{\hatch}{The shaded band represents the total uncertainty} 
+% except for the $WZ$ and $ZZ$ theory uncertainty} 
+
+\newcommand*{\EVTGEN}{\textsc{EvtGen}\xspace}
+\newcommand*{\COMIX}{\textsc{Comix}\xspace}
+\newcommand*{\OPENLOOPS}{\textsc{OpenLoops}\xspace}
+%\newcommand*{\POWHEGBOX}{\textsc{Powheg-Box}\xspace}
+\newcommand*{\MGAMC}{\textsc{MG5}\_aMC}
+
+\newcommand{\twofigwidth}{0.495\textwidth}

@@ -1,0 +1,129 @@
+\section{Data and simulated event samples}
+\label{s:samples}
+
+The data were collected with the ATLAS detector during 2015 with a 
+bunch spacing of \SI{25}{ns} and a mean number of $14$ $pp$ 
+interactions per bunch crossing (pile-up).
+With strict data-quality requirements, the integrated luminosity considered
+corresponds to \lumi with an uncertainty of $2.1\%$~\cite{Aaboud:2016hhf}. 
+
+Monte Carlo simulation samples (MC) are used to model the expected signal and
+background distributions in the different control, validation and signal regions
+described below. The
+heavy-flavour decays involving $b$- and $c$-quarks, 
+particularly important to this measurement, are modelled
+using the \EVTGEN~\cite{EvtGen} program, except for processes modelled using the
+\SHERPA generator. In all samples the top-quark mass is set to $172.5\,\GeV$ and
+the Higgs boson mass is set to $125\,\GeV$. The response of the detector to
+stable\footnote{A particle is considered stable if $c\tau \ge 1$ cm.} particles
+is emulated by a dedicated simulation~\cite{SOFT-2010-01} based either fully on
+\GEANT~\cite{geant} or on a faster parameterisation~\cite{ATL-PHYS-PUB-2010-013}
+for the calorimeter response and \GEANT for other detector systems. To account for
+additional $pp$ interactions from the same and close-by bunch crossings, a set
+of minimum-bias interactions generated using \PYTHIA v8.210~\cite{Sjostrand:2014zea}, 
+referred to as \PYTHIA 8 in the following, 
+with the \tune{A2}~\cite{ATL-PHYS-PUB-2011-014} set of tuned MC parameters (\tune{A2} tune)
+is superimposed on the
+hard-scattering events.  In order to reproduce the same pile-up levels present in
+the data, the distribution of the number of additional $pp$ interactions in the
+MC samples is reweighted to match the one in the data. All samples are processed
+through the same reconstruction software as the data. Simulated events are
+corrected so that the object identification, reconstruction and trigger
+efficiencies, energy scales and energy resolutions match those determined from
+data control samples.
+
+The associated production of a top-quark pair with one or two vector bosons is
+generated at leading order (LO) with \MGAMC\ interfaced to \PYTHIA 8, with up to
+two (\ttW), one (\ttZ) or no ($\bgttWW$) extra partons included in the matrix
+elements. The $\gamma^{*}$ contribution and the \Zgamstar interference are 
+included in the \ttZ samples. 
+The \tune{A14} ~\cite{ATL-PHYS-PUB-2014-021} set of tuned MC parameters (\tune{A14} tune) is used together with the 
+\pdf{NNPDF2\!.\!3LO} parton distribution function (PDF) set~\cite{Ball:2012cx}.
+The samples are normalised using cross sections computed at
+NLO in QCD~\cite{ATL-PHYS-PUB-2016-005}.
+
+The $t$-channel production of a single top quark in association with a $Z$ boson
+(\tZ) is generated using \MGAMC\ interfaced with \PYTHIA v6.427~\cite{PythiaManual}, 
+referred to as \PYTHIA 6 in the following, 
+with the \pdf{CTEQ6L1} PDF~\cite{cteq6} set and the \tune{Perugia2012}~\cite{Skands:2010ak} 
+set of tuned MC parameters at NLO in QCD. The \Zgamstar interference is
+included, and the four-flavour scheme is used in the computation. 
+
+The \Wt-channel production of a single top quark together with a $Z$ boson
+(\WtZ) is generated with  \MGAMC\ and showered with \PYTHIA 8, using the 
+\pdf{NNPDF3\!.\!0NLO} PDF set~\cite{Ball:2015cx} and the \tune{A14} tune. The generation is performed at
+NLO in QCD using the five-flavour scheme. 
+Diagrams containing a top-quark pair are removed to avoid 
+overlap with the \ttZ process.
+
+Diboson processes with four charged leptons ($4\ell$), three charged leptons and
+one neutrino ($\ell\ell\ell\nu$) or two charged leptons and two neutrinos
+($\ell\ell\nu\nu$) are simulated using the \SHERPA 2.1
+generator~\cite{Gleisberg:2008ta}. 
+The matrix elements include all diagrams with four electroweak vertices. 
+They are calculated for up to one ($4\ell,
+\ell\ell\nu\nu$) or no additional partons ($\ell\ell\ell\nu$) at NLO and up to three
+partons at LO using the \COMIX~\cite{Gleisberg:2008fv} and
+\OPENLOOPS~\cite{Cascioli:2011va} matrix element generators and merged with the
+\SHERPA parton shower using the \textsc{ME+PS@NLO}
+prescription~\cite{Hoeche:2012yf}. The \pdf{CT10nlo} PDF set~\cite{Lai:2010vv} is used in conjunction
+with a dedicated parton-shower tuning developed by the \SHERPA authors. The NLO
+cross sections calculated by the generator are used to normalise diboson
+processes.  Alternative diboson samples are simulated using the \POWHEGBOX
+v2~\cite{Powbox2} generator, interfaced to the \PYTHIA 8 parton shower model,
+and for which the \pdf{CT10nlo} PDF set is used in the matrix element, while the
+\pdf{CTEQ6L1} PDF set is used for the parton shower along with the
+\tune{AZNLO}~\cite{AZNLO:2014} set of tuned MC parameters.
+
+The production of three massive vector bosons with subsequent leptonic decays of
+all three bosons is modelled at LO with the \SHERPA 2.1 generator and the
+\pdf{CT10} PDF set~\cite{Lai:2010vv}. Up to two additional partons are included in the matrix
+element at LO and the full NLO accuracy is used for the inclusive process.  
+
+Electroweak processes involving the vector-boson scattering (VBS) diagram and
+producing two same-sign leptons,  two neutrinos and two partons are modelled
+using \SHERPA 2.1 at LO accuracy and the \pdf{CT10} PDF set. Processes of
+orders four and six in the electroweak coupling constant are considered, and up
+to one additional parton is included in the matrix element. 
+
+For the generation of \ttbar events and \Wt-channel single-top-quark events the
+\POWHEGBOX v2 generator is used with the \pdf{CT10} PDF set. The parton shower
+and the underlying event are simulated using \PYTHIA 6
+with the \pdf{CTEQ6L1} PDF set and the corresponding
+\tune{Perugia2012} tune.  The \ttbar samples are normalised to their
+next-to-next-to-leading-order (NNLO) cross-section predictions, including soft-gluon
+resummation to next-to-next-to-leading-log order, as calculated with the
+\tool{Top++2.0} program (see Ref.~\cite{ref:xs6} and references therein).  For more
+efficient sample generation, the \ttbar sample is produced by selecting only true
+dilepton events in the final state.  Moreover, an additional dilepton \ttbar
+sample requiring a $b$-hadron not coming from top-quark decays is generated
+after $b$-jet selection. Diagram removal is employed to remove
+the overlap between \ttbar and \Wt~\cite{Re:2010bp}.
+
+Samples of \ttbar events produced in association with a Higgs boson (\ttH) 
+are generated using NLO matrix elements in \MGAMC\ with
+the \pdf{CT10NLO} PDF set and interfaced with \PYTHIA 8 for the modelling of the
+parton shower.  Higgs boson production via gluon--gluon fusion (ggF) and vector
+boson fusion (VBF) is generated using the \POWHEGBOX v2 generator with
+\pdf{CT10} PDF set. The parton shower and underlying event are simulated using
+\PYTHIA 8 with the \pdf{CTEQ6L1} PDF set and \tune{AZNLO} tune.  Higgs boson
+production with a vector boson is generated at LO using \PYTHIA 8 with the
+\pdf{CTEQ6L1} PDF.  All Higgs boson samples are normalised using theoretical
+calculations of Ref.~\cite{lhcxs}. 
+
+Events containing $Z$ or $W$ bosons with associated jets, referred to as 
+$Z$+jets and $W$+jets in the following, are simulated using the
+\SHERPA 2.1 generator. Matrix elements are calculated for up to two partons at
+NLO and four partons at LO.  The \pdf{CT10} PDF set is used in conjunction with
+a dedicated parton-shower tuning developed by the \SHERPA authors~\cite{Gleisberg:2008ta}.  The
+$Z/W$+jets samples are normalised to the NNLO cross
+sections~\cite{Anastasiou:2003ds, Gavin:2010az, Gavin:2012sy, Li:2012wna}.
+%~\cite{STDM-2011-06, ATLAS-CONF-2015-039}. 
+Alternative $Z/W$+jets samples
+are simulated using \MGAMC\ at LO interfaced to the \PYTHIA 8 parton shower
+model. The \tune{A14} tune is used together with the \pdf{NNPDF2.3LO} PDF set. 
+
+The SM production of three and four top quarks is generated at LO with
+\MGAMC+\PYTHIA 8, using the \tune{A14} tune together with the
+\pdf{NNPDF2\!.\!3LO} PDF set. The samples are normalised using cross
+sections computed at NLO~\cite{Barger:2010uw,Bevilacqua:2012em}.

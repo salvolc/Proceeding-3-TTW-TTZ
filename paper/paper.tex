@@ -1,0 +1,41 @@
+\newcommand*{\ATLASLATEXPATH}{latex/}
+\documentclass[cernpreprint,texlive=2011,txfonts,UKenglish]{\ATLASLATEXPATH atlasdoc}
+\pdfoutput=1
+\usepackage{\ATLASLATEXPATH atlaspackage}
+\usepackage{\ATLASLATEXPATH atlasbiblatex}
+\usepackage{\ATLASLATEXPATH atlascontribute}
+\usepackage{\ATLASLATEXPATH atlasphysics}
+\addbibresource{paper}
+\addbibresource{ATLAS}
+\addbibresource{CMS}
+\addbibresource{ConfNotes}
+\addbibresource{PubNotes}
+\graphicspath{{figures/}}
+\usepackage{multirow}
+\usepackage{bigdelim}
+\usepackage{paper-defs}
+\input{paper-metadata}
+\hypersetup{pdftitle={ATLAS document},pdfauthor={The ATLAS Collaboration}}
+
+\begin{document}
+\maketitle
+\input{intro}
+\input{atlas}
+\input{samples}
+\input{objects}
+\input{selection}
+\input{systematics}
+\input{results}
+\newpage
+\input{conclusion}
+\section*{Acknowledgements}
+\input{acknowledgements}
+\printbibliography
+\newpage
+\input{atlas_authlist}
+%\clearpage
+%\appendix
+%\addcontentsline{toc}{part}{Auxiliary material}
+%\include{appendix}
+
+\end{document}

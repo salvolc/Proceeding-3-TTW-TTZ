@@ -1,0 +1,149 @@
+\section{Systematic uncertainties}
+\label{s:systematics}
+
+The normalisation of signal and background in each channel can be affected by
+several sources of systematic uncertainty. These are described in the
+following subsections.
+
+\subsection{Luminosity}
+\label{sec:syst_lumi}
+The uncertainty in the integrated luminosity in the 2015 dataset is 2.1\%. It is
+derived, following a methodology similar to that detailed in
+Ref.~\cite{DAPR-2011-01}, from a calibration of the luminosity
+scale using $x$--$y$ beam-separation scans performed in August 2015. This
+systematic uncertainty is applied to all processes modelled using \MC\
+simulations.
+
+\subsection{Uncertainties associated with reconstructed objects}
+\label{sec:syst_objects}
+ 
+Uncertainties associated with the lepton selection arise from imperfect
+knowledge of the trigger, reconstruction, identification and isolation
+efficiencies, and lepton momentum scale and resolution \cite{PERF-2013-03,
+ATL-PHYS-PUB-2011-006, ATLAS-CONF-2014-032, ATL-PHYS-PUB-2015-041,
+PERF-2015-10}.  The uncertainty in the electron identification
+efficiency is the largest systematic uncertainty in the \TLC\ and among the
+most important ones in the \FLC.    
+
+Uncertainties associated with the jet selection arise from the jet energy scale
+(JES), the JVT requirement and the jet energy resolution (JER).
+Their estimations are based on Run-1 data and checked with early
+Run-2 data.  The JES and its uncertainty are derived by combining information from
+test-beam data, collision data and simulation~\cite{PERF-2012-01}.  JES
+uncertainty components arising from the in-situ calibration and the jet flavour
+composition are among the dominant uncertainties in the \SSLSR\ and \TL\
+channels.  The uncertainties in the JER and JVT have a significant effect at
+low jet \pt.  The JER uncertainty results in the second largest uncertainty in the
+\TLC.
+
+The efficiency of the flavour-tagging algorithm is measured for each jet
+flavour using control samples in data and in simulation. From these
+measurements, correction factors are defined to correct the tagging rates in
+the simulation.  In the case of $b$-jets, correction factors and their
+uncertainties are estimated based on observed and simulated $b$-tagging rates
+in \ttbar dilepton events~\cite{ATLAS-CONF-2014-004}.  In the case of $c$-jets,
+they are derived based on jets with identified $D^{*}$
+mesons~\cite{ATLAS-CONF-2014-046}.  In the case of light-flavour jets,
+correction factors are derived using dijet events~\cite{ATLAS-CONF-2014-046}.
+Sources of uncertainty affecting the $b$- and $c$-tagging efficiencies are
+considered as a function of jet \pt, including bin-to-bin
+correlations~\cite{ATLAS-CONF-2014-004}.  An additional uncertainty is assigned
+to account for the extrapolation of the $b$-tagging efficiency measurement from
+the \pT region used to determine the scale factors to regions with higher \pT.
+For the efficiency to tag light-flavour jets, the dependence of the uncertainty on the jet \pt and $\eta$ is considered.  These systematic uncertainties are taken as
+uncorrelated between $b$-jets, $c$-jets, and light-flavour jets. 
+
+The treatment of the uncertainties associated with reconstructed objects is common to all
+three channels, and thus these are considered as correlated among different
+regions.
+
+\subsection{Uncertainties in signal modelling} 
+\label{sec:signal_modeling}
+
+From the nominal \MGAMC+\PYTHIA~8 (\tune{A14} tune) configuration, two
+parameters are varied to investigate uncertainties from the modelling of the
+\ttZ and \ttW processes: the renormalisation ($\mu_{\rm R}$) and factorisation ($\mu_{\rm F}$) scales.
+A simultaneous variation of $\mu_{\rm R} = \mu_{\rm F}$ by factors $2.0$ and $0.5$ is performed.  In addition, the effects of a set of variations in the tune parameters
+(\tune{A14} eigentune variations), sensitive to initial- and final-state
+radiation, multiple parton interactions and colour reconnection, are evaluated.
+Studies performed at particle level show that the largest impact comes from
+variations in initial-state radiation~\cite{ATL-PHYS-PUB-2016-005}.  The
+systematic uncertainty due to the choice of generator for the \ttZ and \ttW signals
+is estimated by comparing the nominal sample with one generated with \SHERPA
+v2.2. The \SHERPA sample uses the LO matrix element with up to one (two) additional parton(s) included
+in the matrix element calculation for \ttZ  (\ttW) and merged with the \SHERPA
+parton shower~\cite{Schumann:2007mg}  using the \textsc{ME+PS@LO} prescription.
+The \pdf{NNPDF3\!.\!0NLO} PDF set is used in conjunction
+with a dedicated parton shower tune developed by the \SHERPA authors.  Signal
+modelling uncertainties are treated as correlated among channels.
+
+\subsection{Uncertainties in background modelling}
+\label{sec:bkg_modeling}
+
+In the \TL\ and \SSLSR\ channels, the diboson background is dominated by $WZ$
+production, while $ZZ$ production is dominant in the \FLC.  While the inclusive
+cross sections for these processes are known to better than 10\%, they
+contribute to the background in these channels if additional $b$-jets and 
+other jets are produced and thus have a significantly larger uncertainty.
+
+In the \TL\ and \SSLSR\ channels, the normalisation of the $WZ$ background is
+treated as a free parameter in the fit used to extract the \ttZ and \ttW signals. The
+uncertainty in the extrapolation of the $WZ$ background estimate from the
+control region to signal regions with specific jet and $b$-tag multiplicities
+is evaluated by comparing predictions obtained by varying the renormalisation,
+factorisation and resummation scales used in MC generation. The
+uncertainties vary across the different regions and an overall uncertainty of
+$-50\%$ and $+100\%$ is used.
+
+The normalisation of the $ZZ$ background is treated as a free parameter in the
+fit used to extract the \ttZ and \ttW signals.  In the \FLC, several uncertainties in
+the $ZZ$ background estimate are considered.  They arise from the extrapolation
+from the \FLCR\ control region (corresponding to on-shell $ZZ$ production) to
+the signal region (with off-shell $ZZ$ background) and from the extrapolation
+from the control region without jets to the signal region with at least one
+jet. They are found to be 30\% and 20\%, respectively.  An additional
+uncertainty of 10--30\% is assigned to the normalisation of the heavy-flavour
+content of the $ZZ$ background, based on a data-to-simulation comparison of
+events with one $Z$ boson and additional jets and cross-checked with a
+comparison between different $ZZ$ simulations~\cite{TOPQ-2013-05}.
+
+The uncertainty in the \ttH background is evaluated by varying the factorisation and renormalisation scales up and down by a factor of two with respect to the nominal value, $H_{\rm T}/2$, where $H_{\rm T}$ is defined as the scalar sum of the transverse masses $\sqrt{\pt^2+m^2}$ of all final state particles.
+
+For the \tZ background, an overall normalisation uncertainty of 50\% is
+assumed.  An additional uncertainty affecting the distribution of this
+background as a function of jet and $b$-jet multiplicity is evaluated by
+varying the factorisation and renormalisation scales, as well as the amount of
+radiation in the \tune{Perugia2012} parton shower tune.
+
+An uncertainty of $+10\%$ and $-22\%$ is assigned to the \WtZ background cross
+section. The uncertainty is asymmetric due to an alternative estimate of the
+interference effect between this process and the \ttZ production.  The shape
+uncertainty is evaluated by varying the factorisation and renormalisation
+scales up and down by a factor of two with respect to the nominal value $H_{\rm T}/2.$
+
+For other prompt-lepton backgrounds, uncertainties of 20\% are assigned to the
+normalisations of the $WH$ and $ZH$ processes, based on calculations from
+Ref.~\cite{Heinemeyer:2013tqa}.  An uncertainty of 50\% is considered for
+triboson and same-sign $WW$ processes.
+
+The fake-lepton background uncertainty is evaluated as follows.  The uncertainty due to the matrix method is estimated by propagating the
+statistical uncertainty on the measurement of the fake-lepton efficiencies.
+Additionally, a 20\% uncertainty is added to the subtracted charge-flip yields
+estimated as the difference between data-driven charge-flips and simulation,
+and the \met requirement used to enhance the single-fake-lepton fraction is varied by 
+$20\,\GeV$. The main sources 
+of fake muons are
+decays of light-flavour or heavy-flavour hadrons inside jets.  For the \SSLSR\
+region, the flavour composition of the jets faking leptons is assumed to be
+unknown. To cover this uncertainty, the central values of the fake-lepton
+efficiencies extracted from the $b$-veto and the $b$-tag control regions are
+used, with the efficiency difference assigned as an extra uncertainty. For the
+\FL\ channel, fake-lepton systematic uncertainties are covered by the
+scale-factor uncertainties used to calibrate the simulated fake-lepton yield in
+the control regions. Within a fake-lepton estimation method, all systematic
+uncertainties are considered to be correlated among analysis channels and
+regions. Thus \SSLSR\ and \TL\ fake-lepton systematic uncertainties that use the
+matrix method are not correlated with the \FL\ systematic uncertainties.  The
+expected uncertainties in the fake-lepton backgrounds relative to the total
+backgrounds vary in each channel and signal region: 50\% for the \SSLSR\
+region, 25--50\% for the \TLC\ and 5--10\% for the \FLC.

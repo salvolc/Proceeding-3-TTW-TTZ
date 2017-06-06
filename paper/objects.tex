@@ -1,0 +1,97 @@
+\section{Object reconstruction}
+\label{s:objetcs}
+
+The final states of interest in this analysis contain electrons, muons, jets,
+$b$-jets and missing transverse momentum.
+
+Electron candidates~\cite{PERF-2013-03} are reconstructed from energy deposits
+(clusters) in the EM calorimeter that are associated with reconstructed tracks
+in the inner detector.  The electron identification relies on a
+likelihood-based selection~\cite{ATLAS-CONF-2014-032,
+ATL-PHYS-PUB-2015-041}. Electrons are required to pass the `medium'
+likelihood identification requirements described in Ref.~\cite{ATL-PHYS-PUB-2015-041}. These include requirements on the 
+shapes of the electromagnetic shower in the calorimeter as well as tracking and track-to-cluster matching quantities. 
+The electrons are also required to have transverse momentum $\pt > 7\,\GeV$ and
+$|\eta_\text{cluster}| < 2.47$, where $\eta_\text{cluster}$ is the
+pseudorapidity of the calorimeter energy deposit associated with the electron
+candidate.  Candidates in the EM calorimeter barrel/endcap transition region
+$1.37 < |\eta_\text{cluster}| < 1.52$ are excluded.  
+
+Muon candidates are reconstructed from a fit to track segments in the various layers of
+the muon spectro\-meter, matched with tracks identified in the inner detector.
+Muons are required to have $\pt > 7\,\GeV$ and $\abseta < 2.4$ and to pass the
+`medium' identification requirements defined in Ref.~\cite{PERF-2015-10}. The `medium' requirement includes selections on the numbers of hits
+in the ID and MS as well as a compatibility requirement between momentum measurements in the ID and MS. It provides a high efficiency and purity of selected muons. Electron candidates sharing a track with a muon candidate are removed.  
+
+To reduce the non-prompt lepton background from hadron decays or jets
+misidentified as leptons (labelled as ``fake leptons'' throughout this paper), electron and muon
+candidates are required to be isolated. The total sum of track transverse
+momenta in a surrounding cone of size $\min(10\,\GeV/\pT, r_{e,\mu})$, excluding the track of the candidate from the sum, is required to be less than 6\% of the candidate \pt, where
+$r_e = 0.2$ and $r_{\mu} = 0.3$.  In addition, the sum of the cluster
+transverse energies in the calorimeter within a cone of size $\Delta R_{\eta} \equiv
+\sqrt{(\Delta\eta)^2 + (\Delta\phi)^2} = 0.2$ of any electron candidate,
+excluding energy deposits of the candidate itself, is required to be less than
+6\% of the candidate \pt.
+
+For both electrons and muons, the longitudinal impact parameter of the
+associated track with respect to the primary vertex,\footnote{A primary vertex
+candidate is defined as a vertex with at least five associated tracks,
+consistent with the beam collision region.  If more than one such vertex is
+found, the vertex candidate with the largest sum of squared transverse momenta
+of its associated tracks is taken as the primary vertex.} $z_{0}$, is required
+to satisfy $|z_0 \sin\theta|<0.5$ mm. The significance of the transverse impact
+parameter $d_0$ is required to satisfy $|d_0|/\sigma(d_0)<5$ for electrons and
+$|d_0|/\sigma(d_0)<3$ for muons, where $\sigma(d_0)$ is the uncertainty in
+$d_0$.
+
+Jets are reconstructed using the anti-$k_t$ algorithm~\cite{Cacciari:2008gp,
+Cacciari:2005hq} with radius parameter $R = 0.4$, starting from topological
+clusters in the calorimeters~\cite{Aad:2016upy}. The effect of pile-up on jet
+energies is accounted for by a jet-area-based correction~\cite{Cacciari:2008gn}
+and the energy resolution of the jets is improved by using global sequential
+corrections~\cite{ATLAS-CONF-2015-002}. Jets are calibrated to the hadronic
+energy scale using $E$- and $\eta$-dependent calibration factors based on MC
+simulations, with in-situ corrections based on Run-1 data~\cite{PERF-2011-03,
+ATLAS-CONF-2015-037} and checked with early Run-2
+data~\cite{ATL-PHYS-PUB-2015-015}.  Jets are accepted if they fulfil the
+requirements $\pT > 25\,\GeV$ and $|\eta| < 2.5$. To reduce the contribution
+from jets associated with pile-up, jets with $\pT < 60\,\GeV$ and $|\eta| < 2.4$
+are required to satisfy pile-up rejection criteria (JVT), based on a multivariate
+combination of track-based variables ~\cite{PERF-2014-03}. 
+
+
+%\cite{ATLAS-CONF-2014-018}.
+
+Jets are $b$-tagged as likely to contain $b$-hadrons using the \tool{MV2c20}
+algorithm, a multivariate discriminant making use of the long lifetime, large
+decay multiplicity, hard fragmentation and high mass of $b$-hadrons
+\cite{PERF-2012-04}.  The average efficiency to correctly tag a $b$-jet is
+approximately $77\%$, as determined in simulated \ttbar events, but it varies as
+a function of \pT and $\eta$.  In simulation, the tagging algorithm gives a
+rejection factor of about $130$ against light-quark and gluon jets, and about
+$4.5$ against jets containing charm quarks~\cite{ATL-PHYS-PUB-2015-022}.  The
+efficiency of $b$-tagging in simulation is corrected to that in data using a
+\ttbar-based calibration using Run-1 data~\cite{ATLAS-CONF-2014-004} and
+validated with Run-2 data~\cite{ATL-PHYS-PUB-2015-039}.
+
+The missing transverse momentum $\mathbf{p}^\text{miss}_\text{T}$, with
+magnitude \met, is a measure of the transverse momentum imbalance due to
+particles escaping detection. It is computed~\cite{PERF-2011-07} as the
+negative sum of the transverse momenta of all electrons, muons and jets and an
+additional soft term. The soft term is constructed from all tracks that are associated 
+with the primary vertex but not with any physics object. In this way, the \met is adjusted for the best calibration of the jets
+and the other identified physics objects above, while maintaining pile-up
+independence in the soft term~\cite{ATL-PHYS-PUB-2015-027,
+ATL-PHYS-PUB-2015-023}.
+
+To prevent double-counting of electron energy deposits as jets, the closest jet
+within $\Delta R_y = 0.2$ of a reconstructed electron is removed, where $\Delta
+R_y \equiv \sqrt{(\Delta y)^2 + (\Delta\phi)^2}$.  If the nearest jet surviving
+the above selection is within $\Delta R_y = 0.4$ of an electron, the electron
+is discarded to ensure that selected electrons are sufficiently separated from
+nearby jet activity.  To reduce the background from muons originating from heavy-flavour particle
+decays inside jets, muons are removed if they are separated from the nearest
+jet by $\Delta R_y < 0.4$.  However, if this jet has fewer than three
+associated tracks, the muon is kept and the jet is removed instead; this avoids
+an inefficiency for high-energy muons undergoing significant energy loss in the
+calorimeter.
