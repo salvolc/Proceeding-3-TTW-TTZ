@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1496755716 "proceedings.tex" "./proceedings.pdf" "./proceedings" 1496755716
-  "./proceedings.aux" 1496755716 813 e951a11a0886ff7217d4277e253efae2 ""
+["pdflatex"] 1496771988 "proceedings.tex" "./proceedings.pdf" "./proceedings" 1496771989
+  "./proceedings.aux" 1496771989 818 a39d4799698997379145a8c73469ecbf ""
   "/home/salv/.local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/home/salv/.local/texlive/2015/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/home/salv/.local/texlive/2015/texmf-dist/fonts/tfm/jknappen/ec/tcrm0500.tfm" 1136768653 1536 b3387106d9afecbfe14bde2de6eadf47 ""
@@ -106,11 +106,11 @@
   "/home/salv/.local/texlive/2015/texmf-var/web2c/pdftex/pdflatex.fmt" 1461835588 3862813 28fd8bcfae906bb55dafecffd9704185 ""
   "/home/salv/.local/texlive/2015/texmf.cnf" 1461835571 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
   "paper/ttZ_vs_ttW_2Dfit.pdf" 1481619505 53204 bb5d59fb6ae8a778f11f73b63d374f21 ""
-  "proceedings.aux" 1496755716 813 e951a11a0886ff7217d4277e253efae2 ""
-  "proceedings.tex" 1496755714 8759 5cdc4c9ccad999d93fc8a1f4d8a17ca5 ""
+  "proceedings.aux" 1496771989 818 a39d4799698997379145a8c73469ecbf ""
+  "proceedings.tex" 1496771987 8824 f0aff4e82ce078e2f69781bb50dbb99f ""
   (generated)
-  "./proceedings.log"
-  "proceedings.aux"
-  "proceedings.pdf"
-  "./proceedings.pdf"
   "proceedings.log"
+  "proceedings.aux"
+  "./proceedings.pdf"
+  "proceedings.pdf"
+  "./proceedings.log"
